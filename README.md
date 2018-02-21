@@ -2,9 +2,13 @@
 A small script to login on Facebook from Python to get the "secret" for an App that uses "Login with Facebook". You will need your Facebook username and password along with the app's "Client ID" (its numeric ID)
 
 # Requirements/Dependencies
-The script requires Python3 and RoboBrowse. It is working on Python 3.5.4 and RoboBrowser 0.5.4 (installed by pip).
+The script requires `Python3`, `RoboBrowser` and `lxml` (used by RoboBrowser to parse the HTML). It is working on Python 3.5.4 and RoboBrowser 0.5.4 (installed by pip).
 I am using a Conda environment so the Python build is from them.
-Specifically, I have the 64-bit build dated Aug 14 2017
+Specifically, I have the 64-bit build dated Aug 14 2017.
+
+I have `lxml` 4.1.1, again installed by pip in the Conda environment.
+I have other (useless at the moment) in the environment so it is pointless to share my `requirements.txt`
+
 
 # Use
 You have to set the CLIENT_ID (which is the App ID) in the script. You can change the User Agent as well but it should not be needed. You can use the script by calling the *get_access_token* method with your email and password as parameters. For local use/testing you can also write your credentials in the script.
