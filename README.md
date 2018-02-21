@@ -16,9 +16,9 @@ Note that (at least when I used it), the returned token is just the token Facebo
 I provide an example for Tinder, as I am working on a small project that involves logging in on Tinder.
 Not that this is App dependent as you have to put the right headers in the request.
 I found the needed headers online, you should be able to find them for widely used apps.
-'''
+```
     curl -X POST https://api.gotinder.com/auth --data '{"facebook_token": "TOKEN FROM MY SCRIPT IN DOUBLE QUOTES", "facebook_id":"App ID in Double Quotes eg 464891386855067"}' -H "Content-type: application/json" -H "User-agent: Tinder/3.0.4 (iPhone; iOS 7.1; Scale/2.00)"
-'''
+```
 # Notes
 Note that depending on how the app is implemented, you may get a "short" token (it is the case for Tinder at least). I have not found a workaround yet, you can try to do a MITM when you login on Tinder and sniff the key (this is not related to this script, just an FYI). Or you can keep creating short tokens (they last 12-24 hours, did not test).
 
